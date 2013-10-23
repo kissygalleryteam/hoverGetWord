@@ -1,0 +1,236 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hoverGetWord</title>
+    <script src="http://g.tbcdn.cn/kissy/k/1.3.0/kissy-min.js" charset="utf-8"></script>
+    <style type="text/css">
+    body.container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    ul li {
+        float: left;
+        margin-right: 40px;
+    }
+    .result-board {
+        position: fixed;
+        right: 30px;
+        bottom: 50px;
+        background-color: #fff;
+        color: red;
+        box-shadow: -2px 2px 2px #cccccc;
+        border: 1px solid #999999;
+        height: 50px;
+        width: 200px;
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+    </style>
+</head>
+
+<body class="container">
+    <h1>LOREM</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quisquam sed adipisci id ullam nobis incidunt natus laudantium cum in perspiciatis iusto! Suscipit, ab, amet itaque accusantium voluptatum perspiciatis ducimus.</p>
+    <ul class="clearfix">
+        <li><a href="#">link1</a>
+        </li>
+        <li><a href="#">link2</a>
+        </li>
+        <li><a href="#">link3</a>
+        </li>
+        <li><a href="#">link4</a>
+        </li>
+        <li><a href="#">link5</a>
+        </li>
+        <li><a href="#">link6</a>
+        </li>
+        <li><a href="#">link7</a>
+        </li>
+    </ul>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, natus eaque deleniti unde totam beatae. Nisi, cum at facere. Itaque, expedita ad qui dolores eos est laudantium
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, hic, placeat consectetur nemo officiis illo voluptas veritatis dicta similique consequatur enim quia est! Alias, maiores cumque atque dicta odio ea.</span>ex optio delectus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, aliquid inventore architecto illo culpa <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab porro consequuntur debitis aut officiis sint eos magni voluptas quos modi. Nihil ratione asperiores expedita impedit obcaecati fuga cupiditate culpa tempora.</i> suscipit totam dolores excepturi nisi accusamus doloremque repellat porro quisquam! Quod repudiandae aut dignissimos quam nam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, molestiae voluptatibus. Corrupti quos consectetur reiciendis labore nostrum dolor consequuntur modi. Obcaecati,
+            <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, eius, quae, soluta dicta totam modi ipsum omnis voluptate dignissimos id nisi cum quisquam possimus enim quas consequatur excepturi laudantium aut?</em>minima, facilis hic eveniet laboriosam unde beatae voluptate et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi et maiores provident tenetur eaque? Asperiores, in, incidunt, aspernatur eveniet dolorem placeat voluptatum eum officiis accusantium
+            <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, sapiente explicabo similique debitis et maiores dolorum dolore nesciunt esse nemo vero quaerat aliquid quo blanditiis recusandae reprehenderit rem dolor veniam?</strong>nobis voluptatem mollitia quaerat nam.</p>
+    </div>
+
+    <div id="content" class="productPage theater clearfix">
+        <!-- zfc autolink off -->
+        <div id="theater" class="clearfix hProduct">
+            <div id="productStage">
+                <h1 class="title">
+                    <a href="/dmsx" class="brand">DMSX</a>
+                    <a href="/dmsx-bren" class="link fn">Bren</a>
+                </h1>
+                <span id="sku" class="sku id">SKU: #8241772</span>
+                <div id="prdImage" class="stageItem clearfix stageFirstItem">
+                    <div id="detailImageWrap" class="clearfix">
+                        <div id="detailImage">
+                            <img src="http://l3.zassets.com/images/z/2/3/1/5/5/4/2315542-p-MULTIVIEW.jpg" class="zoomHover gae-click*Product-Page*Zoom-In*Image-Click" data-angle="p">
+                        </div>
+                    </div>
+                    <div id="stage-swatches" class="swatches">
+                        <a href="/dmsx-bren-black" class="swatch-3 active" title="Black" data-color="3">
+                            <span class="swatch gae-click*Product-Page*PrImage*Swatch">Black</span>
+                        </a>
+                        <a href="/dmsx-bren-navy-purple" class="swatch-453014" title="Navy Purple" data-color="453014">
+                            <span class="swatch gae-click*Product-Page*PrImage*Swatch">Navy Purple</span>
+                        </a>
+                        <a href="/dmsx-bren-neon-yellow" class="swatch-106387" title="Neon Yellow" data-color="106387">
+                            <span class="swatch gae-click*Product-Page*PrImage*Swatch">Neon Yellow</span>
+                        </a>
+                        <a href="/dmsx-bren-sungold" class="swatch-409660" title="Sungold" data-color="409660">
+                            <span class="swatch gae-click*Product-Page*PrImage*Swatch">Sungold</span>
+                        </a>
+                        <a href="/dmsx-bren-white" class="swatch-14" title="White" data-color="14">
+                            <span class="swatch gae-click*Product-Page*PrImage*Swatch">White</span>
+                        </a>
+                    </div>
+                    <div id="productImages" class="frontrow">
+                        <div id="frontrowSpotlight" class="frSpotlight single" style="left: 432px; width: 62px; overflow: hidden;"></div>
+                        <div id="frontrowActive" class="frSpotlight single" style="left: 0px; width: 62px;"></div>
+                        <ul>
+                            <li class="active activeFirst">
+                                <a id="frontrow-p" data-angle="p" href="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-p-MULTIVIEW.jpg" target="_blank">
+                                    <span>
+                                        <img src="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-p-MULTIVIEW_THUMBNAILS.jpg" class="gae-click*Product-Page*PrImage*Thumbnail-Swap-Click">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="frontrow-1" data-angle="1" href="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-1-MULTIVIEW.jpg" target="_blank">
+                                    <span>
+                                        <img src="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-1-MULTIVIEW_THUMBNAILS.jpg" class="gae-click*Product-Page*PrImage*Thumbnail-Swap-Click">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="frontrow-2" data-angle="2" href="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-2-MULTIVIEW.jpg" target="_blank">
+                                    <span>
+                                        <img src="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-2-MULTIVIEW_THUMBNAILS.jpg" class="gae-click*Product-Page*PrImage*Thumbnail-Swap-Click">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="frontrow-3" data-angle="3" href="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-3-MULTIVIEW.jpg" target="_blank">
+                                    <span>
+                                        <img src="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-3-MULTIVIEW_THUMBNAILS.jpg" class="gae-click*Product-Page*PrImage*Thumbnail-Swap-Click">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="frontrow-4" data-angle="4" href="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-4-MULTIVIEW.jpg" target="_blank">
+                                    <span>
+                                        <img src="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-4-MULTIVIEW_THUMBNAILS.jpg" class="gae-click*Product-Page*PrImage*Thumbnail-Swap-Click">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="frontrow-5" data-angle="5" href="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-5-MULTIVIEW.jpg" target="_blank">
+                                    <span>
+                                        <img src="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-5-MULTIVIEW_THUMBNAILS.jpg" class="gae-click*Product-Page*PrImage*Thumbnail-Swap-Click">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="frontrow-6" data-angle="6" href="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-6-MULTIVIEW.jpg" target="_blank">
+                                    <span>
+                                        <img src="http://www.zappos.com/images/z/2/3/1/5/5/4/2315542-6-MULTIVIEW_THUMBNAILS.jpg" class="gae-click*Product-Page*PrImage*Thumbnail-Swap-Click">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="associatedProducts component recos amazon-recos boxStyle1 show" aria-hidden="false" style="">
+                    <h3>
+                        <span>You May Also Like</span>
+                    </h3>
+                    <a class="product style-2212982 gae-click*AmazonReco*6pm.product-page*pd_sims_sdp_1" href="/dmsx-nance-black-black-vachetta?zlfid=192&amp;ref=pd_sims_sdp_1">
+                        <img alt="Nance" src="http://l4.zassets.com/images/z/2/2/1/2/9/8/2212982-t-THUMBNAIL.jpg">
+                        <span class="brandName">DMSX</span>
+                        <span class="productName">Nance</span>
+                        <span class="price">39.99</span>
+                        was
+                        <span class="oldPrice">138.00</span>
+                    </a>
+                    <a class="product style-2492647 gae-click*AmazonReco*6pm.product-page*pd_sims_sdp_1" href="/dmsx-crysta-black-gold-black?zlfid=192&amp;ref=pd_sims_sdp_1">
+                        <img alt="Crysta" src="http://l3.zassets.com/images/z/2/4/9/2/6/4/2492647-t-THUMBNAIL.jpg">
+                        <span class="brandName">DMSX</span>
+                        <span class="productName">Crysta</span>
+                        <span class="price">39.99</span>
+                        was
+                        <span class="oldPrice">99.00</span>
+                    </a>
+                    <a class="product style-2217881 gae-click*AmazonReco*6pm.product-page*pd_sims_sdp_1" href="/luichiny-m-pire-black?zlfid=192&amp;ref=pd_sims_sdp_1">
+                        <img alt="M Pire" src="http://a3.zassets.com/images/z/2/2/1/7/8/8/2217881-t-THUMBNAIL.jpg">
+                        <span class="brandName">Luichiny</span>
+                        <span class="productName">M Pire</span>
+                        <span class="price">29.99</span>
+                        was
+                        <span class="oldPrice">79.95</span>
+                    </a>
+                    <a class="product style-2356124 gae-click*AmazonReco*6pm.product-page*pd_sims_sdp_1" href="/charles-albert-1859-black?zlfid=192&amp;ref=pd_sims_sdp_1">
+                        <img alt="1859" src="http://l4.zassets.com/images/z/2/3/5/6/1/2/2356124-t-THUMBNAIL.jpg">
+                        <span class="brandName">Charles Albert</span>
+                        <span class="productName">1859</span>
+                        <span class="price">18.00</span>
+                        was
+                        <span class="oldPrice">59.99</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="result-board">
+        <span class="result">Look here...</span>
+    </div>
+
+
+    <script type="text/javascript">
+    var S = KISSY;
+
+    S.Config.debug = true;
+
+    if (S.Config.debug) {
+        var srcPath = "../../../";
+        S.config({
+            packages: [{
+                name: "gallery",
+                path: srcPath,
+                charset: "utf-8",
+                ignorePackageNameInUri: true
+            }]
+        });
+    }
+
+    KISSY.use('gallery/hoverGetWord/1.0/', function(S, HoverGetWord) {
+
+        function showResult(res) {
+            var board = S.one('.result-board');
+            
+            board.one('.result').text(res);
+        }
+
+        if (S.one('body')) {
+            var hgw = new HoverGetWord({
+                el: S.one('body'),
+                callback: showResult,
+                timeout: 100
+            });
+        };
+    });
+    </script>
+</body>
+
+</html>
